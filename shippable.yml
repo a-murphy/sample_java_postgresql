@@ -4,6 +4,9 @@ jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
+matrix:
+  allow_failures:
+    - jdk: openjdk6
 script:
    - gradle clean build
    - gradle test
