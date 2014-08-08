@@ -4,6 +4,8 @@ jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
+rvm:
+   - 1.9.3 
 matrix:
   allow_failures:
     - jdk: openjdk6
