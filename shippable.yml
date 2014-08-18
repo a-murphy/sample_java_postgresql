@@ -10,4 +10,3 @@ script:
    - gradle cobertura
 notifications:
   email: false
-
