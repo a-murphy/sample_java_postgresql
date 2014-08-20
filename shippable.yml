@@ -5,6 +5,8 @@ jdk:
 env:
    - FOO=foo BAR=bar
    - FOO=bar BAR=foo
+gemfile:
+   - gemfilename
 script:
    - gradle clean build
    - gradle test
