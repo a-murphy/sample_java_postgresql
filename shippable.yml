@@ -2,7 +2,9 @@ language: java
 
 jdk:
    - oraclejdk7
-
+env:
+   - FOO=foo BAR=bar
+   - FOO=bar BAR=foo
 script:
    - gradle clean build
    - gradle test
