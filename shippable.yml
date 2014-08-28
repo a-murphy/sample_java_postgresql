@@ -14,4 +14,3 @@ script:
    
 notifications:
   email: false
-
