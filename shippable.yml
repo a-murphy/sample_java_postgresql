@@ -1,0 +1,16 @@
+language: java
+
+jdk:
+ - oraclejdk7
+ - openjdk6
+ - openjdk7
+env:
+ - FOO=foo BAR=bar
+ - FOO=bar BAR=foo
+script:
+ - gradle clean build
+ - gradle test
+ - gradle cobertura
+
+notifications:
+ email: false
