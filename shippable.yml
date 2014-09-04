@@ -12,5 +12,7 @@ script:
  - gradle test
  - gradle cobertura
 
+parallelized_test: true
+
 notifications:
  email: false
