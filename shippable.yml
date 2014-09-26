@@ -15,3 +15,5 @@ parallelized_test: true
 notifications:
  email: 
    on_success: always
+
+archive: true
