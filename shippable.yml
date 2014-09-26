@@ -12,8 +12,6 @@ script:
 
 parallelized_test: true
 
-build_image: shippable/minv2
-
 notifications:
  email: 
    on_success: always
