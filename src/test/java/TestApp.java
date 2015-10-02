@@ -21,7 +21,7 @@ public class TestApp extends TestCase {
       System.out.println("Error testing database");
       System.out.println(e.getMessage());
     } finally {
-      assertEquals("Seattle, WA", result);
+      assertEquals("Portland, OR", result);
     }
   } 
 }
