@@ -12,8 +12,8 @@ parallelized_test: true
 
 notifications:
  email: 
-   on_success: never
-   on_failure: never
-   recipients: aidan@shippable.com
+   recipients:
+     - aidan@shippable.com
+ irc: localhost#channel
 
-archive: 'true'
+archive: 'false'
