@@ -11,9 +11,6 @@ script:
 parallelized_test: true
 
 notifications:
- email: 
-   recipients:
-     - aidan@shippable.com
- irc: localhost#channel
-
-archive: 'false'
+ email: false
+ irc:
+  - localhost#channel
