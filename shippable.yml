@@ -13,4 +13,6 @@ parallelized_test: true
 notifications:
  email: false
  irc:
-  - localhost#channel
+  pull_requests: true
+  channels:
+    - localhost#channel
