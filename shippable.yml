@@ -12,6 +12,8 @@ parallelized_test: true
 
 notifications:
  email: 
-   on_success: always
+   on_success: never
+   on_failure: never
+   recipients: aidan@shippable.com
 
-archive: true
+archive: 'true'
