@@ -4,16 +4,19 @@ jdk:
  - oraclejdk7
  - openjdk6
  - openjdk7
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14javall
+    image_tag: tip
+    pull: true
+  ci:
+    - gradle clean build
+    - gradle test
+    - gradle cobertura
  
-script:
- - gradle clean build
- - gradle test
- - gradle cobertura
-
-parallelized_test: true
-
 notifications:
  email: 
    on_success: always
 
-archive: true
+
