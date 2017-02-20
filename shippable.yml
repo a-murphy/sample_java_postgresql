@@ -9,11 +9,12 @@ services:
   - postgres
 
 build:
- # pre_ci_boot:
- #   image_name: drydock/u14all
- #   image_tag: prod
- #   pull: true
+  pre_ci_boot:
+    image_name: drydock/u14all
+    image_tag: prod
+    pull: true
   ci:
+    - sudo -u postgres /usr/lib/postgresql/9.4/bin/postgres -c config_file=/etc/postgresql/9.4/main/postgresql.conf
     - gradle clean build
     - gradle test
     - gradle cobertura
