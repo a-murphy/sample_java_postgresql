@@ -1,4 +1,4 @@
-language: java
+language: none
 
 jdk:
  - oraclejdk7
@@ -9,10 +9,10 @@ services:
   - postgres
 
 build:
-  pre_ci_boot:
-    image_name: drydock/u14all
-    image_tag: prod
-    pull: true
+ # pre_ci_boot:
+ #   image_name: drydock/u14all
+ #   image_tag: prod
+ #   pull: true
   ci:
     - gradle clean build
     - gradle test
