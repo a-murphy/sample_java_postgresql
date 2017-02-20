@@ -4,11 +4,14 @@ jdk:
  - oraclejdk7
  - openjdk6
  - openjdk7
+ 
+services:
+  - postgres
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14javall
-    image_tag: tip
+    image_name: drydock/u14all
+    image_tag: prod
     pull: true
   ci:
     - gradle clean build
