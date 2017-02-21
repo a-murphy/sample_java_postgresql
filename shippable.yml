@@ -21,7 +21,7 @@ build:
   #  - gvm use go$SHIPPABLE_GO_VERSION
   #  - export GOPATH=/root
   #  - go get -t -d -v ./...
-    - start_redis
+  #  - start_redis
     - start_postgres
     - mkdir -p ./shippable/buildoutput
     - terraform --version
