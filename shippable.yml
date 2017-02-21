@@ -15,6 +15,15 @@ build:
     pull: true
   ci:
  #   - sudo -u postgres /usr/lib/postgresql/9.4/bin/postgres -c config_file=/etc/postgresql/9.4/main/postgresql.conf
+  #  - source /init
+  #  - source $HOME/.gvm/scripts/gvm
+  #  - export GOPATH=/root
+  #  - gvm use go$SHIPPABLE_GO_VERSION
+  #  - export GOPATH=/root
+  #  - go get -t -d -v ./...
+    - start_redis
+    - start_postgres
+    - mkdir -p ./shippable/buildoutput
     - terraform --version
     - packer version
     - gradle clean build
