@@ -1,7 +1,5 @@
 apply plugin: 'java'
 
-test.reports.junitXml.destination = 'shippable/testresults'  
-
 repositories {
     mavenCentral()
 }
